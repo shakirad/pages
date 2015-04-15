@@ -1,0 +1,180 @@
+/*styling for the user dashboard.*/
+
+.menubar{
+	width:100%;
+	background-color: #fff;
+	position: fixed;
+	transition: all 0.5s ease;
+	height:9.5em;
+	display: inline-block;
+	z-index: 2;
+	min-width: 1203px;
+	max-width: 1400px;
+}
+.menubar a{
+	text-decoration: none;
+	color: #000;
+}
+.menuscrolled {
+  height:8.5em;
+  //border-bottom: 1px solid #E8E5E5;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow:    0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+#menu_container{
+	width: 85%;
+}
+
+#logout{
+	display: inline-block;
+	margin-top: 6.5em;
+	float: right;
+}
+
+#centralise{
+	text-align: center;
+}
+
+
+#dash_container{
+	width: 85%;
+	padding-top: 15em;
+	margin-bottom: 5em;
+	display: inline-block;
+}
+
+#main{
+	width:60%;
+	float: left;
+}
+
+#sidebar{
+	width:35%;
+	float: left;
+	text-align: left;
+}
+
+/*---------------------PERSONAL DETAILS-------------------
+-----------------------------------------------------------*/
+p#username{
+	width: 66%;
+	float: left;
+	height: 2.5em;
+	padding-left: 1em;
+	font-size: 2em;
+	margin-top: 0.2em;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+section#personal_details img{
+	width:15%;
+	float: left;
+}
+
+p#expertise{
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+
+/*---------------------ARTICLES-------------------
+-----------------------------------------------------------*/
+#articles{
+	margin-top: 2em;
+	border-top: 1px solid #D8D8D8;
+}
+
+#articles h2{
+	margin-bottom: 0;
+}
+
+
+.article{
+	padding-top: 1em;
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.stats{
+	width:40%;
+	padding-left: 3em;
+	float: left;
+	height: 13em;
+	font-weight: 500;
+}
+
+.stats span{
+	width:49%;
+}
+
+.stats span.subject{
+	float: left;
+	text-align: left;
+}
+
+.stats span.rating{
+	text-align: left;
+	display: block;
+}
+
+#article_container p{
+	width:100%;
+	display: inline-block;
+}
+
+   
+.tint {
+		position: relative; 
+		width: 50%;
+		float: left;
+		}
+
+
+		.tint:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0, 0.5);
+		height: 208px;
+		}
+
+#article_container img{
+	width:100%;
+}
+
+
+/*-------------------FOLLOWING-------------
+----------------------------------------------*/
+
+.following{
+	width:31%;
+	float: left;
+}
+
+.following.padding{
+	padding-right:1em;
+}
+
+.following img{
+	width: 100%;
+}
+
+/*-------------------RECENT COMMENTS-------------
+----------------------------------------------*/
+
+.recent_comment {
+	border-bottom: 1px solid #D8D8D8;
+	margin-bottom: 1em;
+}
+.recent_comment span{
+	font-weight: 500;
+}
+
+

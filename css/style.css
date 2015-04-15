@@ -1,0 +1,761 @@
+/*styling for the index.php, login.php and new_admin.php.
+Some style rules apply to all the pages. */
+
+body {
+margin: 0 auto;
+font-family: 'Hind', sans-serif;
+min-width: 1203px;
+max-width: 1400px;
+}
+
+/************************************
+NAVIGATION*/
+
+nav {
+  background: #04A8CE;
+  color: white;
+  transition: opacity 1s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  width: 100%;
+  height:6em;
+  position: fixed;
+  z-index: 10;
+  min-width: 1203px;
+  max-width: 1400px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul,footer ul{
+	text-align: center;
+	padding-left: 0;
+
+}
+
+nav li,footer li {
+  padding-top: 1.4em;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  width: 9em;
+  font-size: 1.1em;
+}
+
+li img{
+	width: 6.6em;
+}
+
+li#img{
+	padding-top: 0!important;
+}
+
+li input{
+	font-size: 0.9em;
+}
+
+.scrolled {
+  //opacity: 0.9;
+  height: 5em;
+   background: #20B3D6;
+}
+
+
+
+
+
+
+/************************************
+COMMON STYLES*/
+
+article a {
+	color: #000;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-transition: all 300ms ease-in-out;
+       -moz-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+}
+
+article a:hover{
+	color:#20B3D6;
+}
+
+article{
+	margin: 0 auto;
+	text-align: center;
+}
+
+ div.stats{
+			margin-top: 1em;
+		}
+
+		.stats span { 
+			display: inline-block;
+			width: 48%;
+			padding-bottom: 0.5em;
+
+		}
+
+		/*.stats span.rating, span.date { 
+			display: inline-block;
+		}
+
+		.stats span.rating{
+			text-align: right;
+		}*/
+
+		div.stats img.rating{
+			width: 40%;
+			margin-top: 0.5em;
+		}
+
+		div.rating_container{
+			width:48%;
+			display: inline-block;
+			float: right;
+			text-align: right;
+		}
+
+
+.tint {
+		position: relative; 
+		width: 100%;
+		}
+
+
+		.tint:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0, 0.5);
+		}
+
+div.greywrap{
+	width:100%;
+	background-color: #E8E5E5;
+}
+
+span.thread{
+	display: inline-block;
+	width: 100%;
+	//text-align: right;
+	font-size: 0.9em;
+
+}
+
+span.thread a{
+		color:#20B3D6;
+}
+
+
+/************************************
+SECTIONS*/
+
+
+
+section{
+	text-align: left;
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+section#tagCloud{
+	width:90%;
+	margin:0 auto;
+	margin-bottom: 4em;
+	text-align: center;
+	padding: 2em 0 2em 0;
+}
+
+
+
+/************************************
+TITLE*/
+
+section#title{
+	padding-top: 9em;
+	text-align: center;
+	margin-bottom: 8em;
+
+}
+		#title h1 {
+			font-size: 2.5em;
+			margin: 0.5em 0 0.5em 0;
+			font-weight: 300;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		#title h2{
+			font-size: 1em;
+			display: block;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		#title span{
+			padding-top: 3em;
+			display: inline-block;
+			color: #000;
+			text-decoration: none;
+			  cursor: pointer;
+
+		}
+
+		#title p{
+			width:50%;
+			margin: 0 auto;
+		}
+
+		#title img{
+			width:20%;
+			display: inline;
+			margin-right: 32em;
+
+		}
+
+
+		#title img#camera{
+			z-index: 2;
+			width:19%;
+			  -webkit-transition: 0.5s ease-in-out;
+		    -moz-transition: 0.5s ease-in-out;
+		    -o-transition: 0.5s ease-in-out;
+		}
+
+		img#camerabottom{
+			z-index: 1;
+			width:7%;
+			margin-top: -72px;
+			margin-left: -42px;
+		}
+
+
+
+		/*
+	
+		//CSS transition used before I decided the camera following the mouse would be better.
+		#title img#camera:hover{
+			-webkit-transform: rotate(30deg);
+		    -moz-transform: rotate(30deg);
+		    -o-transform: rotate(30deg);
+		    -ms-transform: rotate(30deg);
+		*/
+
+		img#logo{
+			margin: 0 auto;
+			display: block;
+			margin-top: -5px;
+			width: 15%;
+		}
+
+		img#arrow{
+			width:4%;
+			margin: 0 auto;
+			display: block;
+			cursor: pointer;
+
+		}
+
+		.slideToggle{
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.slideTogglebox {
+			display: none;
+			background-color: #E8E5E5;
+			font-size: 1.5em;
+			padding: 1em;
+			margin:0 auto;
+			margin-top: 1em;
+			width:30%;
+		}
+
+		.slideTogglebox input{
+			width:20em;
+			height:3em;
+			border: none;
+			display: block;
+			margin: 0 auto;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			font-size: 0.6em;
+			padding-left: 1em;
+		}
+
+		.slideTogglebox input#submit{
+			color: #fff;
+		}
+/*COMPATIBILITY
+
+		.slideTogglebox input::-webkit-input-placeholder{
+			padding-left: 1em;
+
+		}
+
+		.slideTogglebox input::-moz-placeholder {
+			padding-left: 1em;
+		}
+
+		.slideTogglebox	input:-moz-placeholder{
+			padding-left: 1em;
+		}
+
+		.slideTogglebox	input:-ms-input-placeholder{
+			padding-left: 1em;
+		}	*/
+
+
+
+
+
+/************************************
+MOST POPULAR THIS WEEK*/
+
+section#popular{
+	margin-bottom: 5em;
+	display: inline-block;
+}
+	
+
+		.popularItem {
+		display: block;
+		float:left;
+		width:31%;
+		padding: 1%;
+		margin:0 auto;
+		}
+
+		.popularItem#middle{
+			border-left: 1px solid #D8D8D8;
+			border-right: 1px solid #D8D8D8;
+		}
+
+		.popularItem:hover{
+			background-color: #E8E5E5;
+			-webkit-transition: all 300ms ease-in-out;
+       		-moz-transition: all 300ms ease-in-out;
+            	transition: all 300ms ease-in-out;
+		}
+
+/*Opaque black overlay, every image looks better with an opaque
+black oevrlay - noting people will be choosing their own images
+for th articles. */
+
+			.popularItem img{
+			width:100%;
+
+		}
+
+		.postText{
+			height: 20.5em;
+		}
+
+		span.author{
+			font-weight: 600;
+		}
+
+		span.subject{
+			float: right;
+			text-align: right;
+			font-weight: 600;
+		}
+
+		span.comment_thread {
+			font-weight:600;
+		}
+
+
+/************************************
+CATEGORIES*/
+
+section.cat{
+	padding:1em 0 1em 0;
+	text-align: left;
+	display: inline-block;
+}
+
+section.cat div.rating_container{
+	text-align: left;
+}
+
+section.cat img.rating{
+	width:32%;
+}
+
+div.catsmall img.rating{
+	width:33%;
+}
+
+
+		h4{
+			font-size: 2em;
+			margin-bottom: 0.5em;
+			margin-top:0.5em;
+			padding-left: 0.5%;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+
+
+		h3{
+			height:2em;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		h3 a:hover{
+			font-weight: 900;
+			color: #000;
+		}
+
+		.category {
+			display: inline-block;
+
+		}
+
+		.cattopsection{
+			height:5em;
+		}
+
+		 .large {
+			width:64%;
+			border-right: 1px solid #D8D8D8;
+		}
+
+
+		.catlargecontent {
+			width:55%;
+			display: inline-block;
+			padding: 1%;
+		}
+
+
+		.category img{
+			width: 100%;
+			vertical-align: bottom;
+		}
+
+		.category .tint {
+		width: 40%;
+		display: inline-block;
+		}
+
+		
+		.catsmall {
+			vertical-align: top;
+			width:30%; 
+			display:inline-block;
+			padding: 0 1% 0 1%;
+		}
+
+
+		.categoryText{
+			vertical-align: middle;
+			padding-top: 3em;
+		}
+
+/*DISCUSS*/
+
+#discuss .catlargecontent{
+			width: 95%;
+		}
+
+		section#discuss.cat{
+			margin-bottom: 5em;
+		}
+
+		#discuss .large{
+			border-right: none;
+		}
+
+		#discuss .large .categoryText{
+			font-size: 2em;
+			height:9em;
+
+		}
+
+		#discuss  .categoryText{
+						margin-top: 0;
+		}
+
+		#discuss img{
+			width: 22%;
+			margin-right: 5%;
+			margin-bottom: 1em;
+			display: inline-block;
+		}
+
+		#discuss img.upvote{
+			width:20%;
+			float:right;
+			margin: 0;
+			padding: 0.4em;
+		}
+
+
+		#discuss .large .date{
+			font-size: 0.5em;
+			margin-top: 4em;
+			float: right;
+			font-style: italic;
+			color: #919191;
+		}
+
+		#discuss .catsmall .stats{
+			width: 60%;
+			display: inline-block;
+			margin-top: 0;
+			vertical-align: top;
+		}
+
+		#discuss .catsmall .author{
+			display: inline-block;
+			font-weight: 600;
+			font-size: 1.3em;
+			width: 45%;
+		}
+
+		#comment{
+			background-color: #fff;
+			padding: 5%;
+		}
+
+		div.votes{
+			margin-top: 0.3em;
+			width: 50%;
+			float: right;
+			text-align: right;
+		}
+
+		span.upvoteno{
+			display: inline-block;
+			font-weight: 300;
+		}
+
+
+
+/********************FOOTER*******************/
+
+footer {
+	background-color: #000;
+	padding: 2em 0 2em 0;
+
+}
+
+footer ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+	padding-left: 1%;
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+
+footer li{
+	display: block;
+}
+
+footer section a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+		
+
+
+/******************************************
+ * TAG CLOUD CSS BELOW*/
+
+
+#htmltagcloud{	
+	font-size: 100%;
+	width: 80%;
+	margin: 0 auto;
+	line-height:3em;
+	text-indent:0;
+}
+
+
+#htmltagcloud a{
+	color: #000;
+}
+
+#htmltagcloud a:hover{
+	color:#20B3D6;
+	text-decoration: none;
+	}
+
+
+.wrd{
+	padding:0;
+	position:relative;
+	}
+
+.wrd a{
+	text-decoration:none;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+
+	}
+
+.tagcloud0{
+	font-size:1.1em;
+	}
+
+
+.tagcloud1{
+	font-size:1.6em;z-index:9}.tagcloud1 a{}.tagcloud2{font-size:2em;z-index:8}.tagcloud2 a{}.tagcloud3{font-size:2.2em;z-index:7}.tagcloud3 a{}.tagcloud4{font-size:2.6em;z-index:6}.tagcloud4 a{}.tagcloud5{font-size:3.0em;z-index:5}.tagcloud5 a{}.tagcloud6{font-size:3.3em;z-index:4}.tagcloud6 a{}.tagcloud7{font-size:3.6em;z-index:3}.tagcloud7 a{}.tagcloud8{font-size:4.2em;z-index:2}.tagcloud8 a{}.tagcloud9{font-size:4.2em;z-index:1}.tagcloud9 a{}.tagcloud10{font-size:4.5em;z-index:0;}
+
+/******************************************
+ * LOG IN & REGISTER CSS */
+ #login_page, #register{
+ 	/*background-image: url(../images/satellitebg.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;*/
+ 	background-color: #04A8CE;
+ }
+
+ section#login_register{
+ 	padding-top: 10em;
+ }
+
+
+ .form{
+ 	vertical-align: top;
+ 	width:30%;
+ 	display: inline-block;
+ 	padding-bottom: 10em;
+ 	padding-right: 5em;
+ 	color: #fff;
+ 	
+ }
+
+div#container{
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 1em;
+
+}
+
+p.author{
+	font-size: 2em;
+	margin: 0;
+	color: #fff;
+	font-weight: 300;
+	text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+
+p.quote{
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	color: #fff;
+	font-size: 4em;
+	line-height: 1.2em;
+	font-weight: 700;
+	text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+
+p.strapline{
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	margin: 0;
+	text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+.form ul{
+	padding: 0;
+}
+
+.form li{
+ 	list-style-type: none;
+ }
+
+  .form h2{
+  	text-align: left;
+  }
+
+  .form h2.nomargin{
+  	margin-top: 0;
+  }
+
+  .form input{
+  	display: block;
+  	width:100%;
+  	margin-top: 0.5em;
+  	height:3em;
+  	box-sizing: border-box;
+  }
+
+  .form #submit{
+  	height:2.7em;
+  	margin-top: 2em;
+  	font-family: 'Hind', sans-serif;
+  }
+
+  .reglog_but{
+  	width: 100%;
+  	text-align: center;
+  	background-color: #C0C0C0;
+  	padding: 0.5em 0 0.5em 0;
+  	color:#fff;
+  	border:none;
+  	font-size: 1em;
+  }
+
+  .reglog_but a{
+  	text-decoration: none;
+  	font-family: 'Hind', sans-serif;
+  	color:#fff;
+ 
+  }
+
+  .image{
+  	  	width:100%;
+  	  	padding-top: 1em;
+  }
+
+  #logimage_right{
+  	width:100%;
+
+  }
+
+  .extra_form_info{
+  	font-size: 0.9em;
+  	line-height: 1.5em;
+  }
+
+#d1, #d2, #d3 {
+	width:60%;
+}
+
+  /* http://www.technomancy.org/html/facebook-button/*/
+
+.facebook_button {
+	margin-top: 2em;
+    display: inline-block;
+    background: #4a6ea9 url('../images/facebook1.png') left no-repeat;
+    border-top: 1px solid #29447e;
+    border-right: 1px solid #29447e;
+    border-bottom: 1px solid #1a356e;
+    border-left: none;
+    height: 40px;
+    padding-right: 7px;
+    padding-left: 29px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    line-height: 40px;
+    width:100%;
+
+    cursor: pointer;
+
+
